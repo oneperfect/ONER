@@ -43,7 +43,7 @@ public class ActionLog {
     // 产生日志的用户
     @CreatedBy
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn
+    @JoinColumn(name = "create_by")
     @JsonIgnore
     private User createBy;
 
