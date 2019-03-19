@@ -1,26 +1,25 @@
-
-### ·şÎñÆ÷ÅäÖÃ
+### æœåŠ¡å™¨é…ç½®
 server:
   port: 8080
 
-### TIMOÅäÖÃ
+### ONERé…ç½®
 project:
-  captcha-open: false                       #ÊÇ·ñ¿ªÆôµÇÂ¼ÑéÖ¤Âë
-  remember-me-timeout: 7                    #cookie¼Ç×¡µÇÂ¼ĞÅÏ¢Ê±¼ä£¬Ä¬ÈÏ7Ìì£¨Ìì£©
-  global-session-timeout: 1800              #Session»á»°³¬Ê±Ê±¼ä£¬Ä¬ÈÏ30·ÖÖÓ£¨Ãë£©
-  #file-upload-path: c:/upload/             #ÎÄ¼şÉÏ´«Â·¾¶£¬Ä¬ÈÏÔÚÏîÄ¿¸ùÄ¿Â¼uploadÏÂ
-  static-path-pattern: /upload/**           #ÉÏ´«ÎÄ¼ş¾²Ì¬·ÃÎÊÂ·¾¶
+  captcha-open: false                       #æ˜¯å¦å¼€å¯ç™»å½•éªŒè¯ç 
+  remember-me-timeout: 7                    #cookieè®°ä½ç™»å½•ä¿¡æ¯æ—¶é—´ï¼Œé»˜è®¤7å¤©ï¼ˆå¤©ï¼‰
+  global-session-timeout: 1800              #Sessionä¼šè¯è¶…æ—¶æ—¶é—´ï¼Œé»˜è®¤30åˆ†é’Ÿï¼ˆç§’ï¼‰
+  #file-upload-path: c:/upload/             #æ–‡ä»¶ä¸Šä¼ è·¯å¾„ï¼Œé»˜è®¤åœ¨é¡¹ç›®æ ¹ç›®å½•uploadä¸‹
+  static-path-pattern: /upload/**           #ä¸Šä¼ æ–‡ä»¶é™æ€è®¿é—®è·¯å¾„
 
-### springÅäÖÃ
+### springé…ç½®
 spring:
-  ## Êı¾İ¿âÅäÖÃ
+  ## æ•°æ®åº“é…ç½®
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/oner?useSSL=false&characterEncoding=utf-8
     username: root
     password: root
 
-  ## jpaÅäÖÃ
+  ## jpaé…ç½®
   jpa:
     show-sql: true
     hibernate:
@@ -29,7 +28,7 @@ spring:
       hibernate.dialect: com.demon.core.mysql.MySQLDialectUTF8
       hibernate.format_sql: false
 
-  ## thymeleafÄ£°åÉèÖÃ
+  ## thymeleafæ¨¡æ¿è®¾ç½®
   thymeleaf:
     prefix: classpath:/templates
     suffix: .html
@@ -38,7 +37,7 @@ spring:
     servlet.content-type: text/html
     cache: false
 
-  ## ÎÄ¼şÉÏ´«ÅäÖÃ
+  ## æ–‡ä»¶ä¸Šä¼ é…ç½®
   servlet:
     multipart:
       max-file-size: 10MB
