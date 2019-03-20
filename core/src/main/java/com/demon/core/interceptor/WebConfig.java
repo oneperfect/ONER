@@ -16,6 +16,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Autowired
     private LoginInterceptor loginInterceptor;
+
     @Autowired
     private ProjectProperties properties;
 
