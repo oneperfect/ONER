@@ -2,14 +2,12 @@ package com.demon.admin.system.controller;
 
 import com.demon.admin.core.enums.ResultEnum;
 import com.demon.admin.core.exception.ResultException;
-import com.demon.admin.system.service.UserService;
 import com.demon.core.url.URL;
 import com.demon.core.utils.ResultVoUtil;
 import com.demon.core.vo.ResultVo;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,9 +23,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/login")
 public class LoginController {
-
-    @Autowired
-    private UserService userService;
 
     /**
      * 跳转到登录界面
