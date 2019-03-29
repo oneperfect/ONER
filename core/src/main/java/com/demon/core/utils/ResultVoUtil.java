@@ -1,6 +1,6 @@
 package com.demon.core.utils;
 
-import com.demon.core.enums.StatuCodeEnum;
+import com.demon.core.enums.StatusCodeEnum;
 import com.demon.core.url.URL;
 import com.demon.core.vo.ResultVo;
 
@@ -14,23 +14,21 @@ public class ResultVoUtil {
     public static final ResultVo SAVE_SUCCESS = success("保存成功");
 
     /**
-     * 操作成功
+     * 操作成功，返回页面数据
      * @param message 提示信息
      * @param object 数据对象
-     * @return 页面数据
      */
     public static ResultVo success(String message, Object object) {
         ResultVo resultVo = new ResultVo();
         resultVo.setMessage(message);
         resultVo.setData(object);
-        resultVo.setCode(StatuCodeEnum.SUCCESS.getCode());
+        resultVo.setCode(StatusCodeEnum.SUCCESS.getCode());
         return resultVo;
     }
 
     /**
      * 操作成功，返回默认信息
      * @param message 提示信息
-     * @return
      */
     public static ResultVo success(String message) {
         Object Object = null;
@@ -41,17 +39,31 @@ public class ResultVoUtil {
      * 操作成功，返回地址信息
      * @param message 提示信息
      * @param url 地址信息
-     * @return
      */
     public static ResultVo success(String message, URL url) {
         return success(message, url.getUrl());
     }
 
     /**
+     * 操作成功，使用默认的提示信息
+     * @param object 对象
+     */
+    public static ResultVo success(Object object){
+        String message = StatusCodeEnum.SUCCESS.getMessage();
+        return success(message,object);
+    }
+
+    /**
+     * 操作成功，不反回信息
+     */
+    public static ResultVo success() {
+        return success(null);
+    }
+
+    /**
      * 操作失败，返回错误信息
-     * @param code
-     * @param message
-     * @return
+     * @param code 状态码
+     * @param message 提示信息
      */
     public static ResultVo error(Integer code, String message){
         ResultVo resultVo = new ResultVo();
@@ -65,7 +77,7 @@ public class ResultVoUtil {
      * @param message 提示信息
      */
     public static ResultVo error(String message){
-        Integer code = StatuCodeEnum.ERROR.getCode();
+        Integer code = StatusCodeEnum.ERROR.getCode();
         return error(code, message);
     }
 

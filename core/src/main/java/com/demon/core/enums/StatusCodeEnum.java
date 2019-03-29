@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 
 @Getter
-public enum StatuCodeEnum {
+public enum StatusCodeEnum {
 
     SUCCESS(200, "成功"),
     ERROR(400, "错误");
@@ -18,7 +18,7 @@ public enum StatuCodeEnum {
 
     private String message;
 
-    StatuCodeEnum(Integer code, String message) {
+    StatusCodeEnum(Integer code, String message) {
         this.code = code;
         this.message = message;
     }

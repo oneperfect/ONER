@@ -123,7 +123,7 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
                 }
             }, 2000);
         } else {
-            layer.msg(result.msg, {offset: '15px', time: 3000, icon: 2});
+            layer.msg(result.message, {offset: '15px', time: 3000, icon: 2});
         }
     };
 

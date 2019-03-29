@@ -73,7 +73,7 @@ public class LoginController {
             return ResultVoUtil.success("登录成功", new URL("/main/index"));
 
         }catch(Exception e) {
-            return ResultVoUtil.error("用户名或密码输入错误！");
+            return ResultVoUtil.error("用户名或密码错误！");
         }
     }
 

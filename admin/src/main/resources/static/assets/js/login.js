@@ -15,6 +15,7 @@ layui.use(['element'], function () {
                 $('.captcha-img').click();
             }
             $.fn.Messager(result);
+            console.log(result)
         });
     })
 });

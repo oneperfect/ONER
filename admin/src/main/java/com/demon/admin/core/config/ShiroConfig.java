@@ -37,13 +37,12 @@ public class ShiroConfig {
          */
         LinkedHashMap<String, String> filterMap = new LinkedHashMap<>();
         filterMap.put("/login/**", "anon");
-        filterMap.put("/main/**", "anon");
         filterMap.put("/assets/**", "anon");
         filterMap.put("/lib/**", "anon");
         filterMap.put("/favicon.ico", "anon");
 //        filterMap.put("/**", "userAuth");
 
-        shiroFilterFactoryBean.setLoginUrl("/login/#");
+        shiroFilterFactoryBean.setLoginUrl("/login/");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
 
         return shiroFilterFactoryBean;
