@@ -65,17 +65,16 @@ public class LoginController {
             // 判断是否拥有后台角色
 //            User user = ShiroUtil.getSubject();
 //            if (user.getIsRole().equals(UserIsRoleEnum.YES.getCode())) {
-//                return ResultVoUtil.success("登录成功", new URL("/main/#"));
+//                return ResultVoUtil.success("登录成功", new URL("/main/index));
 //            } else {
 //                return ResultVoUtil.error("您不是后台管理员！");
 //            }
 
-            return ResultVoUtil.success("登录成功", new URL("/main/index/"));
+            return ResultVoUtil.success("登录成功", new URL("/main/index"));
+
         }catch(Exception e) {
             return ResultVoUtil.error("用户名或密码输入错误！");
         }
     }
-
-
 
 }

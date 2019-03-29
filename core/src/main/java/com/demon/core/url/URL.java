@@ -15,7 +15,7 @@ public class URL {
 
     }
 
-    public URL(String url) {
+    public URL (String url) {
         this.url = HttpServletUtil.getRequest().getContextPath() + url;
     }
 

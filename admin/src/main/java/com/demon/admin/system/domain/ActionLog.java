@@ -1,10 +1,8 @@
 package com.demon.admin.system.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,10 +12,6 @@ import java.util.Date;
  * @Auther: oneperfect
  * @Date: 2019/03/06
  */
-@Entity
-@Table(name = "sys_action_log")
-@Data
-@EntityListeners(AuditingEntityListener.class)
 public class ActionLog implements Serializable {
 
 

@@ -14,6 +14,7 @@ public class ResultVo<T> {
     private String message;
     // 状态码
     private Integer code;
+    private Integer statuCode;
     // 数据信息
     private T data;
 

@@ -49,14 +49,14 @@ public class ResultVoUtil {
 
     /**
      * 操作失败，返回错误信息
-     * @param statuCode
+     * @param code
      * @param message
      * @return
      */
-    public static ResultVo error(Integer statuCode, String message){
+    public static ResultVo error(Integer code, String message){
         ResultVo resultVo = new ResultVo();
         resultVo.setMessage(message);
-        resultVo.setCode(statuCode);
+        resultVo.setCode(code);
         return resultVo;
     }
 
