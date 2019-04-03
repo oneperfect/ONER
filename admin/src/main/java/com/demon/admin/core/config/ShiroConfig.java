@@ -1,11 +1,14 @@
 package com.demon.admin.core.config;
 
 import com.demon.admin.core.shiro.AuthorRealm;
+import com.demon.admin.core.shiro.UserAuthorFilter;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.servlet.Filter;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 /**
@@ -25,6 +28,13 @@ public class ShiroConfig {
         // 设置安全管理器
         shiroFilterFactoryBean.setSecurityManager(securityManager);
 
+        /**
+         * 添加自定义拦截器，重写user认证方法，处理session超时问题
+         */
+        HashMap<String, Filter> filter = new HashMap<>();
+        filter.put("userAuthor", new UserAuthorFilter());
+        shiroFilterFactoryBean.setFilters(filter);
+
         // 添加Shiro内置过滤器
         /**
          * Shiro内置过滤器，可以实现权限相关的拦截器
@@ -40,10 +50,14 @@ public class ShiroConfig {
         filterMap.put("/assets/**", "anon");
         filterMap.put("/lib/**", "anon");
         filterMap.put("/favicon.ico", "anon");
-//        filterMap.put("/**", "userAuth");
+//        filterMap.put("/**", "userAuthor");
 
-        shiroFilterFactoryBean.setLoginUrl("/login/");
+        // 设置过滤规则
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
+        // 跳转登录界面
+        shiroFilterFactoryBean.setLoginUrl("/login/");
+        // 未授权错误页面
+        shiroFilterFactoryBean.setUnauthorizedUrl("/noAuth");
 
         return shiroFilterFactoryBean;
     }

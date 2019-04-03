@@ -3,6 +3,8 @@ package com.demon.admin.core.shiro;
 import com.demon.admin.system.domain.User;
 import com.demon.admin.system.service.UserService;
 import org.apache.shiro.authc.*;
+import org.apache.shiro.authc.credential.CredentialsMatcher;
+import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
@@ -53,10 +55,19 @@ public class AuthorRealm extends AuthorizingRealm {
          * 参数3：加盐处理
          * 参数4：固定写法
          */
-        String password = "123456";
-
         System.out.println("执行认证逻辑");
-        return new SimpleAuthenticationInfo("", password, "");
-//        return new SimpleAuthenticationInfo(user, user.getPassword(), salt, getName());
+        return new SimpleAuthenticationInfo(user, user.getPassword(), salt, getName());
     }
+
+    /**
+     * 设置认证加密方式
+     */
+    @Override
+    public void setCredentialsMatcher(CredentialsMatcher credentialsMatcher) {
+        HashedCredentialsMatcher matcher = new HashedCredentialsMatcher();
+        matcher.setHashAlgorithmName(ShiroUtil.HASH_ALGORITHM_NAME);
+        matcher.setHashIterations(ShiroUtil.HASH_ITERATIONS);
+        super.setCredentialsMatcher(matcher);
+    }
+
 }

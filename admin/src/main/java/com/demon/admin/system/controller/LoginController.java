@@ -70,11 +70,16 @@ public class LoginController {
 //                return ResultVoUtil.error("您不是后台管理员！");
 //            }
 
-            return ResultVoUtil.success("登录成功", new URL("/main/index"));
+            return ResultVoUtil.success("登录成功", new URL("/main/"));
 
         }catch(Exception e) {
             return ResultVoUtil.error("用户名或密码错误！");
         }
+    }
+    @GetMapping("/logout")
+    public String logout() {
+        SecurityUtils.getSubject().logout();
+        return "redirect:/login/";
     }
 
 }

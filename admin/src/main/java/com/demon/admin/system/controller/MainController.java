@@ -1,5 +1,7 @@
 package com.demon.admin.system.controller;
 
+import com.demon.admin.core.shiro.ShiroUtil;
+import com.demon.admin.system.domain.User;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +20,11 @@ import javax.servlet.http.HttpServletRequest;
 public class MainController implements ErrorController{
 
     @GetMapping("/")
-    public String main() {
+    public String main(Model model) {
+        // 获取用户数据
+        User user = ShiroUtil.getSubject();
+
+        model.addAttribute(user);
         return "/main";
     }
 
@@ -46,7 +52,7 @@ public class MainController implements ErrorController{
 
     @Override
     public String getErrorPath() {
-        return "/error";
+        return "/main/error";
     }
 
 }

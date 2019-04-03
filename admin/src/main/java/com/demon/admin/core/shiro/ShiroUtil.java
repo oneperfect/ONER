@@ -13,12 +13,12 @@ public class ShiroUtil {
     /**
      * 加密算法
      */
-    private static final String HASH_ALGORITHM_NAME = "SHA-256";
+    public static final String HASH_ALGORITHM_NAME = "SHA-256";
 
     /**
      * 加密次数
      */
-    private static final Integer HASH_ITERATIONS = 1024;
+    public static final Integer HASH_ITERATIONS = 1024;
 
     /**
      * 密码加密
