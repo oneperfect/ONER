@@ -1,5 +1,8 @@
 package com.demon.admin.system.domain;
 
+import com.demon.admin.core.enums.UserIsRoleEnum;
+import com.demon.admin.core.enums.UserStatusEnum;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
@@ -9,6 +12,8 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @Auther: oneperfect
@@ -44,19 +49,27 @@ public class User implements Serializable {
 
     private String phone;// 电话号码
 
-    private Long isRole;// 是否拥有角色
-
     private String remake;// 备注
 
+    @JsonIgnore
     @CreatedDate
     private Date createDate;// 创建时间
 
+    @JsonIgnore
     @LastModifiedDate
     private Date updateDate;// 更新时间
 
-    private Byte status;// 状态
+    @JsonIgnore
+    private Byte status = UserStatusEnum.OK.getCode();// 状态
 
-    public User() {
-    }
+    @JsonIgnore
+    private Byte isRole = UserIsRoleEnum.YES.getCode();// 是否拥有角色
+
+    @JsonIgnore
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "sys_user_role",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles = new HashSet<>(0);
 
 }

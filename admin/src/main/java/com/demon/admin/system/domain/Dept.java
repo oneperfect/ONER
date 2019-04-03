@@ -41,6 +41,4 @@ public class Dept implements Serializable {
     private Date updateDate;// 更新时间
 
 
-    public Dept() {
-    }
 }

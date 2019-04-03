@@ -1,14 +1,24 @@
 package com.demon.admin.system.controller;
 
+import com.demon.admin.core.constant.AdminConst;
+import com.demon.admin.core.enums.MenuTypeEnum;
+import com.demon.admin.core.enums.UserStatusEnum;
 import com.demon.admin.core.shiro.ShiroUtil;
+import com.demon.admin.system.domain.Menu;
 import com.demon.admin.system.domain.User;
+import com.demon.admin.system.service.MenuService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.error.ErrorController;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Auther: oneperfect
@@ -19,11 +29,45 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/main")
 public class MainController implements ErrorController{
 
+    @Autowired
+    private MenuService menuService;
+
     @GetMapping("/")
     public String main(Model model) {
-        // 获取用户数据
+        // 获取当前登录用户的数据
         User user = ShiroUtil.getSubject();
+        // 菜单键值对(ID->菜单)
+        Map<Long, Menu> keyMenu = new HashMap<>();
 
+        // 管理员实时更新菜单
+        if(user.getId().equals(AdminConst.ADMIN_ID)){
+            Sort sort = new Sort(Sort.Direction.ASC, "sort");
+            List<Menu> menus = menuService.getList(sort);
+            menus.forEach(menu -> keyMenu.put(menu.getId(), menu));
+        }else{
+            // 其他用户需从相应的角色中获取菜单资源
+            user.getRoles().forEach(role -> {
+                role.getMenus().forEach(menu -> {
+                    if(menu.getStatus().equals(UserStatusEnum.OK.getCode())){
+                        keyMenu.put(menu.getId(), menu);
+                    }
+                });
+            });
+        }
+
+        // 封装菜单树形数据
+        Map<Long,Menu> treeMenu = new HashMap<>();
+        keyMenu.forEach((id, menu) -> {
+            if(!menu.getType().equals(MenuTypeEnum.NOT_MENU.getCode())){
+                if(keyMenu.get(menu.getPid()) != null){
+                    keyMenu.get(menu.getPid()).getChildren().put(menu, Long.valueOf(menu.getSort()));
+                }else{
+                    if(menu.getType().equals(MenuTypeEnum.TOP_LEVEL.getCode())){
+                        treeMenu.put(Long.valueOf(menu.getSort()), menu);
+                    }
+                }
+            }
+        });
         model.addAttribute(user);
         return "/main";
     }
