@@ -4,8 +4,10 @@ import com.demon.admin.core.enums.UserStatusEnum;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.*;
-import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
@@ -35,19 +37,25 @@ public class Menu implements Serializable {
     private Byte type;// 菜单类型
     private Integer sort;// 排序
     private String remake;// 备注
+
     @CreatedDate
-    @JsonIgnore
     private Date createDate;// 创建时间
+
     @LastModifiedDate
-    @JsonIgnore
     private Date updateDate;// 更新时间
+
+    @JsonIgnore
     @CreatedBy
-    @JsonIgnore
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="create_by")
     private User createBy;// 创建用户
+
+    @JsonIgnore
     @LastModifiedBy
-    @JsonIgnore
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="update_by")
     private User updateBy;// 更新用户
-    @JsonIgnore
+
     private Byte status = UserStatusEnum.OK.getCode();// 用户状态
 
     @JsonIgnore
@@ -56,5 +64,5 @@ public class Menu implements Serializable {
 
     @JsonIgnore
     @Transient
-    public Map<Menu, Long> children = new HashMap<>();
+    public Map<Long, Menu> children = new HashMap<>();
 }

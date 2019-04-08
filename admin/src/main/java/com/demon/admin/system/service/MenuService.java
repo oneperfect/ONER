@@ -14,5 +14,9 @@ public interface MenuService {
 
     List<Menu> getList(Example<Menu> example, Sort sort);
 
+    /**
+     * 获取菜单列表对象
+     * @param sort 排序对象
+     */
     List<Menu> getList(Sort sort);
 }

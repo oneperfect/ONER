@@ -64,11 +64,11 @@ a{
 .layui-layout-admin .layui-header .layui-nav .layui-this:after{
 	background: none;
 }
-.layui-layout-admin .layui-header .layui-nav .timo-search{
+.layui-layout-admin .layui-header .layui-nav .oner-search{
 	position: relative;
 	margin:0 16px;
 }
-.layui-layout-admin .layui-header .layui-nav .timo-search-input{
+.layui-layout-admin .layui-header .layui-nav .oner-search-input{
 	border: 0;
 	width: 190px;
 	height: 30px;
@@ -77,7 +77,7 @@ a{
 	border-radius: 2px;
 	background-color: rgba(255, 255, 255, 0.8);
 }
-.layui-layout-admin .layui-header .layui-nav .timo-search-button{
+.layui-layout-admin .layui-header .layui-nav .oner-search-button{
 	position: absolute;
 	right: 0;
 	top: 10px;
@@ -88,17 +88,17 @@ a{
 	background: none;
 	cursor: pointer;
 }
-.layui-layout-admin .layui-header .layui-nav .timo-screen-full>.fa{
+.layui-layout-admin .layui-header .layui-nav .oner-screen-full>.fa{
 	position: relative;
 	top: 3px;
 }
-.layui-layout-admin .layui-header .layui-nav .timo-screen-full.full-on>.fa:before{
+.layui-layout-admin .layui-header .layui-nav .oner-screen-full.full-on>.fa:before{
 	content: "\e758";
 }
-.layui-layout-admin .layui-header .layui-nav .timo-nav-user>a{
+.layui-layout-admin .layui-header .layui-nav .oner-nav-user>a{
 	padding-right: 28px;
 }
-.layui-layout-admin .layui-header .layui-nav .timo-nav-user>a .layui-nav-more{
+.layui-layout-admin .layui-header .layui-nav .oner-nav-user>a .layui-nav-more{
 	right: 12px;
 }
 .layui-layout-admin .layui-header .layui-nav-bar{
@@ -115,7 +115,7 @@ a{
 	border: initial;
 	background-color: initial;
 }
-.layui-layout-admin .layui-header .timo-nav-child-box{
+.layui-layout-admin .layui-header .oner-nav-child-box{
 	float: right;
 	min-width: 120px;
 	padding: 5px 0;
@@ -378,22 +378,22 @@ a{
 /* 其他 */
 .layui-layout-admin .layui-header .layui-logo-mini,
 .layui-layout-admin .side-toggle .layui-icon-spread-left,
-.timo-checkbox input[type="checkbox"]{
+.oner-checkbox input[type="checkbox"]{
 	display: none;
 }
-.timo-checkbox{
+.oner-checkbox{
     display: block;
     width: 18px;
     height: 18px;
 }
-.timo-checkbox .layui-icon{
+.oner-checkbox .layui-icon{
     display: block;
     width: 16px;
     height: 16px;
     line-height: 16px;
     cursor: pointer;
 }
-.timo-checkbox .layui-icon:before{
+.oner-checkbox .layui-icon:before{
     display: block;
     width: 100%;
     height: 100%;
@@ -404,7 +404,7 @@ a{
     color: #fff;
     background-color: #fff;
 }
-.timo-checkbox input[type="checkbox"]:checked + .layui-icon:before{
+.oner-checkbox input[type="checkbox"]:checked + .layui-icon:before{
     border-color: #5FB878;
     background-color: #5FB878;
 }
@@ -557,16 +557,16 @@ a{
 }
 
 /* 页面通用样式 */
-.timo-layout-page{
+.oner-layout-page{
 	background-color: #eeeeee;
 	padding: 18px;
 }
-.timo-layout-page .timo-card-header{
+.oner-layout-page .oner-card-header{
 	border-radius: 0;
 	border-top: 4px solid #d2d2d2;
 	border-bottom: 1px solid #e2e2e2;
 }
-.timo-layout-page .timo-card-header .refresh-btn{
+.oner-layout-page .oner-card-header .refresh-btn{
 	position: absolute;
 	top:8px;
 	right: 8px;
@@ -578,117 +578,117 @@ a{
 	text-align: center;
 	border-radius: 4px;
 }
-.timo-layout-page .timo-card-header .refresh-btn:hover{
+.oner-layout-page .oner-card-header .refresh-btn:hover{
 	background-color: #cccccc;
 }
-.timo-layout-page .timo-card-screen{
+.oner-layout-page .oner-card-screen{
 	margin-top: 6px;
 	margin-bottom: 12px;
 }
-.timo-layout-page .timo-card-screen.put-row .screen-btn-group{
+.oner-layout-page .oner-card-screen.put-row .screen-btn-group{
 	clear: both;
 	float: left;
 	width: 100%;
 	margin-top: 14px;
 }
-.timo-layout-page .timo-card-screen.put-row .screen-btn-group .btn-group-left{
+.oner-layout-page .oner-card-screen.put-row .screen-btn-group .btn-group-left{
 	float: left;
 	margin-left: -2px;
 }
-.timo-layout-page .timo-card-screen.put-row .screen-btn-group .btn-group-left button{
+.oner-layout-page .oner-card-screen.put-row .screen-btn-group .btn-group-left button{
 	margin-right: 6px;
 }
-.timo-layout-page .timo-card-screen.put-row .screen-btn-group .btn-group-right{
+.oner-layout-page .oner-card-screen.put-row .screen-btn-group .btn-group-right{
 	float: right;
 }
-.timo-search-status{
+.oner-search-status{
 	width: 70px;
 }
-.timo-search-status .timo-search-select{
+.oner-search-status .oner-search-select{
 	width: 70px;
 	height: 38px;
 	padding-left: 12px;
 	border-color: #e6e6e6;
 	cursor: pointer;
 }
-.timo-layout-page .layui-form-pane .layui-form-label{
+.oner-layout-page .layui-form-pane .layui-form-label{
 	width: auto;
 	background-color: #fff;
 	border-color: #009688;
 	color: #009688;
 	font-weight: bold;
 }
-.timo-layout-page .layui-form-pane input,
-.timo-layout-page .layui-form-pane select{
+.oner-layout-page .layui-form-pane input,
+.oner-layout-page .layui-form-pane select{
 	border-color: #009688;
 	border-radius: 0 2px 2px 0;
 }
-.timo-layout-page .layui-form-pane input:hover,
-.timo-layout-page .layui-form-pane input:focus{
+.oner-layout-page .layui-form-pane input:hover,
+.oner-layout-page .layui-form-pane input:focus{
 	border-color: #009688 !important;
 	outline: 0;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 150, 136, 0.6);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 150, 136, 0.6);
 }
-.timo-layout-page .layui-form-pane .layui-input-block{
+.oner-layout-page .layui-form-pane .layui-input-block{
 	margin-left: 0px;
 	float: left;
 }
-.timo-layout-page .screen-btn-group .layui-btn{
+.oner-layout-page .screen-btn-group .layui-btn{
 	padding: 0 14px;
 }
-.timo-layout-page .timo-table{
+.oner-layout-page .oner-table{
 	color: #000000;
 }
-.timo-layout-page .timo-table.timo-table-fixed{
+.oner-layout-page .oner-table.oner-table-fixed{
     table-layout: fixed;
 }
-.timo-layout-page .timo-table a{
+.oner-layout-page .oner-table a{
 	color: #009688;
 }
-.timo-layout-page .timo-table a:hover {
+.oner-layout-page .oner-table a:hover {
 	color: #004a43;
 	text-decoration: underline;
 }
-.timo-layout-page .timo-table th,
-.timo-layout-page .timo-table td{
+.oner-layout-page .oner-table th,
+.oner-layout-page .oner-table td{
 	padding: 12px;
 	border: 1px solid #dee2e6;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.timo-layout-page .timo-table th{
+.oner-layout-page .oner-table th{
 	vertical-align: bottom;
 	border-bottom: 2px solid #dee2e6;
 	font-weight: bold;
 	background-color: #ffffff;
 }
-.timo-layout-page .timo-table .timo-table-checkbox{
+.oner-layout-page .oner-table .oner-table-checkbox{
     width: 20px;
 }
-.timo-layout-page .timo-table .timo-checkbox{
+.oner-layout-page .oner-table .oner-checkbox{
     margin: 0 1px;
 }
-.timo-layout-page .timo-table .timo-table-null{
+.oner-layout-page .oner-table .oner-table-null{
 	text-align: center;
 }
-.timo-layout-page .timo-table .sortable{
+.oner-layout-page .oner-table .sortable{
     cursor: pointer;
     background:#FFFFFF url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAQAAADYWf5HAAAAkElEQVQoz7X QMQ5AQBCF4dWQSJxC5wwax1Cq1e7BAdxD5SL+Tq/QCM1oNiJidwox0355mXnG/DrEtIQ6azioNZQxI0ykPhTQIwhCR+BmBYtlK7kLJYwWCcJA9M4qdrZrd8pPjZWPtOqdRQy320YSV17OatFC4euts6z39GYMKRPCTKY9UnPQ6P+GtMRfGtPnBCiqhAeJPmkqAAAAAElFTkSuQmCC") no-repeat right;
 }
-.timo-layout-page .timo-table .sortable.asc{
+.oner-layout-page .oner-table .sortable.asc{
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZ0lEQVQ4y2NgGLKgquEuFxBPAGI2ahhWCsS/gDibUoO0gPgxEP8H4ttArEyuQYxAPBdqEAxPBImTY5gjEL9DM+wTENuQahAvEO9DMwiGdwAxOymGJQLxTyD+jgWDxCMZRsEoGAVoAADeemwtPcZI2wAAAABJRU5ErkJggg==");
 }
-.timo-layout-page .timo-table .sortable.desc{
+.oner-layout-page .oner-table .sortable.desc{
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZUlEQVQ4y2NgGAWjYBSggaqGu5FA/BOIv2PBIPFEUgxjB+IdQPwfC94HxLykus4GiD+hGfQOiB3J8SojEE9EM2wuSJzcsFMG4ttQgx4DsRalkZENxL+AuJQaMcsGxBOAmGvopk8AVz1sLZgg0bsAAAAASUVORK5CYII=");
 }
 
-.timo-layout-page .page-info{
+.oner-layout-page .page-info{
 	padding-top: 12px;
 	vertical-align: center;
 }
-.timo-layout-page .page-number{
+.oner-layout-page .page-number{
 	display: inline-block;
 	padding: 3px;
 	padding-top: 1px;
@@ -731,13 +731,13 @@ a{
 .btn-group.show .layui-nav-child{
     display: block;
 }
-.timo-layout-page .screen-btn-group .layui-btn{
+.oner-layout-page .screen-btn-group .layui-btn{
     margin-left: 2px;
 }
-.timo-layout-page .screen-btn-group .btn-group .layui-btn{
+.oner-layout-page .screen-btn-group .btn-group .layui-btn{
     padding-right: 12px;
 }
-.timo-layout-page .screen-btn-group .btn-group .caret{
+.oner-layout-page .screen-btn-group .btn-group .caret{
     margin-left: 4px;
 }
 
@@ -786,98 +786,98 @@ a{
 }
 
 /* 添加/编辑页面 */
-.timo-compile{
+.oner-compile{
 	padding-top: 20px;
 }
-.timo-compile .layui-input-inline{
+.oner-compile .layui-input-inline{
 	width: 240px;
 }
-.timo-compile .layui-input-info{
+.oner-compile .layui-input-info{
     float: left;
     margin-left: 4px;
     height: 38px;
     line-height: 38px;
     color: #747474;
 }
-.timo-compile .layui-form-text{
+.oner-compile .layui-form-text{
 	padding-right: 20px;
 }
-.timo-compile .layui-form-text .layui-textarea{
+.oner-compile .layui-form-text .layui-textarea{
 	max-width: 360px;
 }
-.timo-compile .layui-form-text .layui-textarea.textarea-fill{
+.oner-compile .layui-form-text .layui-textarea.textarea-fill{
 	max-width: initial;
 }
-.timo-compile .timo-finally{
+.oner-compile .oner-finally{
 	border-top: 1px solid #ddd;
 	padding: 14px 0 0 0;
     margin: 10px 20px 20px;
 }
-.timo-compile .timo-finally .layui-btn{
+.oner-compile .oner-finally .layui-btn{
 	padding: 0 14px;
 }
-.timo-compile .timo-finally .btn-secondary{
+.oner-compile .oner-finally .btn-secondary{
 	color: #FFF;
 	background-color: #737c85;
 	border-color: #737c85;
 }
 
 /* 详细页面 */
-.timo-detail-page{
+.oner-detail-page{
 	padding: 12px;
 }
-.timo-detail-title{
+.oner-detail-title{
 	padding:10px 15px;
 	font-weight: bold;
 	border: 1px solid #c9ced1;
 	border-bottom: none;
 }
-.timo-detail-table{
+.oner-detail-table{
 	color: #000000;
     margin: 0 0 12px;
 }
-.timo-detail-table th{
+.oner-detail-table th{
 	font-weight: bold;
 }
-.timo-detail-table th,
-.timo-detail-table td{
+.oner-detail-table th,
+.oner-detail-table td{
 	border: 1px solid #c9ced1;
 }
-.timo-detail-table tbody tr:hover{
+.oner-detail-table tbody tr:hover{
 	background-color: #ffffff;
 }
 
 /* 树形数据展示 */
-.timo-tree-table tbody{
+.oner-tree-table tbody{
 	visibility: hidden;
 }
-.timo-nav-tree{
+.oner-nav-tree{
 	margin-top: 6px;
 	margin-right: 15px;
 	border: 1px solid #dee2e6;
 	max-height: 590px;
 	overflow-y: auto;
 }
-.timo-nav-tree .layui-card-header{
+.oner-nav-tree .layui-card-header{
 	border-bottom: 1px solid #dee2e6;
 }
-.timo-tree .toggle-fill{
+.oner-tree .toggle-fill{
 	width: 16px;
 	display: inline-block;
 }
-.timo-tree .toggle-icon{
+.oner-tree .toggle-icon{
 	color: #555555;
 	width: 16px;
 	cursor: pointer;
 	text-align: center;
 }
-.timo-tree .tree-hidd{
+.oner-tree .tree-hidd{
 	display: none;
 }
-.timo-tree .tree-active{
+.oner-tree .tree-active{
 	background-color: #f2f2f2;
 }
-.timo-tree .ztree span.tree-add{
+.oner-tree .ztree span.tree-add{
 	margin-left:2px;
 	background-position:-144px 0;
 	vertical-align:top;

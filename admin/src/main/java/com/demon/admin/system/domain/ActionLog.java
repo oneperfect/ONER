@@ -1,6 +1,9 @@
 package com.demon.admin.system.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+import org.apache.shiro.authc.AuthenticationListener;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 
@@ -12,6 +15,11 @@ import java.util.Date;
  * @Auther: oneperfect
  * @Date: 2019/03/06
  */
+@Entity
+@Table(name = "sys_action_log")
+@Setter
+@Getter
+@EntityListeners(AuthenticationListener.class)
 public class ActionLog implements Serializable {
 
 

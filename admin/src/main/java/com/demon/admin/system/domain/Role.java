@@ -27,23 +27,31 @@ import java.util.Set;
 @EntityListeners(AuditingEntityListener.class)
 public class Role implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;// 主键ID
     private String title;// 角色名称
     private String name;// 标识名称
     private String remake;// 备注
+
     @CreatedDate
-    @JsonIgnore
     private Date createDate;// 创建时间
+
     @LastModifiedDate
-    @JsonIgnore
     private Date updateDate;// 更新时间
+
+    @JsonIgnore
     @CreatedBy
-    @JsonIgnore
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="create_by")
     private User createBy;// 创建用户
+
+    @JsonIgnore
     @LastModifiedBy
-    @JsonIgnore
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="update_by")
     private User updateBy;// 更新用户
-    @JsonIgnore
+
     private Byte status = UserStatusEnum.OK.getCode();// 用户状态
 
     @JsonIgnore

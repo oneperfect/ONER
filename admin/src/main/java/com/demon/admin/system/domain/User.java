@@ -51,11 +51,9 @@ public class User implements Serializable {
 
     private String remake;// 备注
 
-    @JsonIgnore
     @CreatedDate
     private Date createDate;// 创建时间
 
-    @JsonIgnore
     @LastModifiedDate
     private Date updateDate;// 更新时间
 

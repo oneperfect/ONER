@@ -3,7 +3,7 @@
 <head th:replace="/common/template :: header(~{::title},~{::link},~{::style})">
 </head>
 <body>
-<div class="layui-form timo-compile">
+<div class="layui-form oner-compile">
     <form th:action="@{/edit_pwd}">
         <div class="layui-form-item">
             <label class="layui-form-label">原来密码</label>
@@ -23,7 +23,7 @@
                 <input class="layui-input" type="password" name="confirm" placeholder="再一次输入密码">
             </div>
         </div>
-        <div class="layui-form-item timo-finally">
+        <div class="layui-form-item oner-finally">
             <button class="layui-btn ajax-submit"><i class="fa fa-check-circle"></i> 保存</button>
             <button class="layui-btn btn-secondary close-popup"><i class="fa fa-times-circle"></i> 关闭</button>
         </div>

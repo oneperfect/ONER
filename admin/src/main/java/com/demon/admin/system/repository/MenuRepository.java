@@ -11,5 +11,9 @@ import java.util.List;
  */
 public interface MenuRepository extends BaseRepository<Menu, Long> {
 
+    /**
+     * 查找状态正常的菜单
+     * @param sort 排序对象
+     */
     List<Menu> findAllByStatus(Sort sort, Byte status);
 }

@@ -17,9 +17,9 @@
             <i class="layui-icon layui-icon-spread-left"></i>
         </a>
         <ul class="layui-nav layui-layout-right">
-            <!--<li class="layui-nav-item timo-search">
-              <input class="timo-search-input" type="search" placeholder="搜索">
-              <button class="timo-search-button"><i class="fa fa-search"></i></button>
+            <!--<li class="layui-nav-item oner-search">
+              <input class="oner-search-input" type="search" placeholder="搜索">
+              <button class="oner-search-button"><i class="fa fa-search"></i></button>
             </li>-->
             <li class="layui-nav-item">
                 <a href="#">
@@ -27,14 +27,14 @@
                 </a>
             </li>
             <li class="layui-nav-item">
-                <a class="timo-screen-full" href="#">
+                <a class="oner-screen-full" href="#">
                     <i class="fa layui-icon layui-icon-screen-full"></i>
                 </a>
             </li>
-            <li class="layui-nav-item timo-nav-user">
-                <a class="timo-header-nickname" th:text="${user.nickname}">ONER</a>
+            <li class="layui-nav-item oner-nav-user">
+                <a class="oner-header-nickname" th:text="${user.nickname}">ONER</a>
                 <div class="layui-nav-child">
-                    <div class="timo-nav-child-box">
+                    <div class="oner-nav-child-box">
                         <div><a class="open-popup" data-title="个人信息" th:attr="data-url=@{/user_info}"
                                 data-size="680,464">
                             <!--   -->
@@ -57,20 +57,27 @@
                 <img class="layui-side-user-avatar open-popup" th:attr="data-url=@{/user_info}" data-size="680,464"
                      th:src="@{'/user/picture?p='+${user.picture}}" alt="头像">
                 <div>
-                    <p class="layui-side-user-name" th:text="${user.nickname}">TIMO</p>
+                    <p class="layui-side-user-name" th:text="${user.nickname}">oner</p>
                     <p class="layui-side-user-designation">在线</p>
                 </div>
             </div>
             <!-- 导航区域 -->
             <ul class="layui-nav layui-nav-tree" lay-filter="layui-nav-side">
                 <li class="layui-nav-item" th:each="item:${treeMenu}">
-                    <a href="javascript:;" th:attr="lay-url=${item.value.url}"><i th:class="${item.value.icon}"></i><span class="layui-nav-title" th:text="${item.value.title}">一级菜单</span></a>
+                    <a href="javascript:;" th:attr="lay-url=${item.value.url}">
+                        <i th:class="${item.value.icon}"></i>
+                        <span class="layui-nav-title" th:text="${item.value.title}">一级菜单</span>
+                    </a>
                     <dl class="layui-nav-child" th:if="${item.value.children.size()}">
                         <dd th:each="sItem:${item.value.children}">
-                            <a href="javascript:;" th:attr="lay-url=${sItem.value.url}"><span class="layui-nav-title" th:text="${sItem.value.title}">二级菜单</span></a>
+                            <a href="javascript:;" th:attr="lay-url=${sItem.value.url}">
+                                <span class="layui-nav-title" th:text="${sItem.value.title}">二级菜单</span>
+                            </a>
                             <dl class="layui-nav-child" th:if="${sItem.value.children.size()}">
                                 <dd th:each="tItem:${sItem.value.children}">
-                                    <a href="javascript:;" th:attr="lay-url=${tItem.value.url}"><span class="layui-nav-title" th:text="${tItem.value.title}">三级菜单</span></a>
+                                    <a href="javascript:;" th:attr="lay-url=${tItem.value.url}">
+                                        <span class="layui-nav-title" th:text="${tItem.value.title}">三级菜单</span>
+                                    </a>
                                 </dd>
                             </dl>
                         </dd>

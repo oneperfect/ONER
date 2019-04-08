@@ -21,7 +21,7 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
     });
 
     /* 最大化窗口 */
-    $(".timo-screen-full").on("click", function (e) {
+    $(".oner-screen-full").on("click", function (e) {
         e.preventDefault();
         if (!$(this).hasClass("full-on")) {
             var docElm = document.documentElement;
@@ -74,6 +74,7 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
     /* 监听hash来切换选项卡*/
     window.onhashchange = function (e) {
         var url = location.hash.replace(/^#/, '');
+        console.log("url: " + url);
         var index = $(".layui-layout-admin .layui-side .layui-nav-item")[0];
         $(index).children("a").attr("lay-icon", "true");
         if (url === "" || url === undefined) {
@@ -165,7 +166,7 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
     $(".ajax-status").on("click", function (e) {
         e.preventDefault();
         var checked = [];
-        var tdcheckbox = $(".timo-table td .timo-checkbox :checkbox:checked");
+        var tdcheckbox = $(".oner-table td .oner-checkbox :checkbox:checked");
         if (tdcheckbox.length > 0) {
             tdcheckbox.each(function (key, val) {
                 checked.push("ids=" + $(val).attr("value"));
@@ -183,7 +184,7 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
         var title = $(this).data("title");
         var url = $(this).attr("data-url");
         if ($(this).hasClass("open-popup-param")) {
-            var tdcheckbox = $(".timo-table td .timo-checkbox :checkbox:checked");
+            var tdcheckbox = $(".oner-table td .oner-checkbox :checkbox:checked");
             var param = '';
             if (tdcheckbox.length === 0) {
                 layer.msg('请选择一条记录');
@@ -233,9 +234,9 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
     });
 
     // 展示数据列表-多选框
-    var thcheckbox = $(".timo-table th .timo-checkbox :checkbox");
+    var thcheckbox = $(".oner-table th .oner-checkbox :checkbox");
     thcheckbox.on("change", function () {
-        var tdcheckbox = $(".timo-table td .timo-checkbox :checkbox");
+        var tdcheckbox = $(".oner-table td .oner-checkbox :checkbox");
         if (thcheckbox.is(':checked')) {
             tdcheckbox.prop("checked", true);
         } else {
@@ -244,14 +245,14 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
     });
 
     // 检测列表数据是否为空
-    var timoTable = $(".timo-table tbody");
-    if (timoTable.length > 0) {
-        var children = timoTable.children();
+    var onerTable = $(".oner-table tbody");
+    if (onerTable.length > 0) {
+        var children = onerTable.children();
         if (children.length === 0) {
-            var length = $(".timo-table thead th").length;
-            var trNullInfo = "<tr><td class='timo-table-null' colspan='"
+            var length = $(".oner-table thead th").length;
+            var trNullInfo = "<tr><td class='oner-table-null' colspan='"
                 + length + "'>没有找到匹配的记录</td></tr>";
-            timoTable.append(trNullInfo);
+            onerTable.append(trNullInfo);
         }
     }
 
@@ -259,7 +260,7 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
     var paramSkip = function () {
         var getSearch = "";
         // 搜索框参数
-        $('.timo-search-box [name]').each(function (key, val) {
+        $('.oner-search-box [name]').each(function (key, val) {
             if ($(val).val() !== "" && $(val).val() !== undefined) {
                 getSearch += $(val).attr("name") + "=" + $(val).val() + "&";
             }
@@ -288,7 +289,7 @@ layui.use(['element', 'form', 'layer', 'upload'], function () {
     };
 
     /* 展示列表数据搜索 */
-    $(document).on("click", ".timo-search-btn", function () {
+    $(document).on("click", ".oner-search-btn", function () {
         paramSkip();
     });
     /* 改变显示页数 */

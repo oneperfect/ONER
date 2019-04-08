@@ -1,6 +1,7 @@
 package com.demon.admin.system.domain;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -15,7 +16,8 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "sys_dept")
-@Data
+@Setter
+@Getter
 @EntityListeners(AuditingEntityListener.class)
 public class Dept implements Serializable {
 

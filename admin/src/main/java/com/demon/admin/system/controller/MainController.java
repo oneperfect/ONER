@@ -7,6 +7,7 @@ import com.demon.admin.core.shiro.ShiroUtil;
 import com.demon.admin.system.domain.Menu;
 import com.demon.admin.system.domain.User;
 import com.demon.admin.system.service.MenuService;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.data.domain.Sort;
@@ -40,7 +41,7 @@ public class MainController implements ErrorController{
         Map<Long, Menu> keyMenu = new HashMap<>();
 
         // 管理员实时更新菜单
-        if(user.getId().equals(AdminConst.ADMIN_ID)){
+        if(AdminConst.ADMIN_ID.equals(user.getId())){
             Sort sort = new Sort(Sort.Direction.ASC, "sort");
             List<Menu> menus = menuService.getList(sort);
             menus.forEach(menu -> keyMenu.put(menu.getId(), menu));
@@ -48,7 +49,7 @@ public class MainController implements ErrorController{
             // 其他用户需从相应的角色中获取菜单资源
             user.getRoles().forEach(role -> {
                 role.getMenus().forEach(menu -> {
-                    if(menu.getStatus().equals(UserStatusEnum.OK.getCode())){
+                    if(UserStatusEnum.OK.getCode().equals(menu.getStatus())){
                         keyMenu.put(menu.getId(), menu);
                     }
                 });
@@ -58,17 +59,19 @@ public class MainController implements ErrorController{
         // 封装菜单树形数据
         Map<Long,Menu> treeMenu = new HashMap<>();
         keyMenu.forEach((id, menu) -> {
-            if(!menu.getType().equals(MenuTypeEnum.NOT_MENU.getCode())){
+            if(!MenuTypeEnum.NOT_MENU.getCode().equals(menu.getType())){
                 if(keyMenu.get(menu.getPid()) != null){
-                    keyMenu.get(menu.getPid()).getChildren().put(menu, Long.valueOf(menu.getSort()));
+                    keyMenu.get(menu.getPid()).getChildren().put(Long.valueOf(menu.getSort()), menu);
                 }else{
-                    if(menu.getType().equals(MenuTypeEnum.TOP_LEVEL.getCode())){
+                    if(MenuTypeEnum.TOP_LEVEL.getCode().equals(menu.getType())){
                         treeMenu.put(Long.valueOf(menu.getSort()), menu);
                     }
                 }
             }
         });
-        model.addAttribute(user);
+
+        model.addAttribute("user", user);
+        model.addAttribute("treeMenu", treeMenu);
         return "/main";
     }
 
@@ -81,7 +84,7 @@ public class MainController implements ErrorController{
     /**
      * 处理错误页面
      */
-    @RequestMapping("/error")
+    @GetMapping("/error")
     public String handleError(Model model, HttpServletRequest request) {
         Integer statusCode = (Integer) request.getAttribute("javax.servlet.error.status_code");
         String errorMsg = "好像出错了呢！";

@@ -3,7 +3,7 @@
 <head th:replace="/common/template :: header(~{::title},~{::link},~{::style})">
 </head>
 <body>
-<div class="layui-form timo-compile user-info-page">
+<div class="layui-form oner-compile user-info-page">
     <div class="user-info">
         <div class="user-avatar-box">
             <img class="user-avatar" th:src="@{'/user/picture?p='+${user.picture}}" alt="头像">
@@ -52,7 +52,7 @@
                 <textarea placeholder="请输入内容" class="layui-textarea" name="remark">[[${user.remark}]]</textarea>
             </div>
         </div>
-        <div class="layui-form-item timo-finally">
+        <div class="layui-form-item oner-finally">
             <button class="layui-btn ajax-submit"><i class="fa fa-check-circle"></i> 保存</button>
             <a class="layui-btn btn-secondary close-popup"><i class="fa fa-times-circle"></i> 关闭</a>
         </div>
