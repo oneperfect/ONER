@@ -1,7 +1,7 @@
 package com.demon.admin.system.domain;
 
 import com.demon.admin.core.enums.UserIsRoleEnum;
-import com.demon.admin.core.enums.UserStatusEnum;
+import com.demon.admin.core.enums.StatusEnum;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,27 +29,17 @@ public class User implements Serializable {
     // 用户id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String username; // 用户名
-
+    private Long id;// 用户ID
+    private String username;// 用户名
     private String nickname;// 用户昵称
-
     private String password;// 用户密码
-
     private String salt;// 密码盐
 
-    private Long deptId;// 部门id
-
     private String picture;// 用户头像
-
     private String sex;// 性别
-
     private String email;// 邮箱
-
     private String phone;// 电话号码
-
-    private String remake;// 备注
+    private String remark;// 备注
 
     @CreatedDate
     private Date createDate;// 创建时间
@@ -58,7 +48,12 @@ public class User implements Serializable {
     private Date updateDate;// 更新时间
 
     @JsonIgnore
-    private Byte status = UserStatusEnum.OK.getCode();// 状态
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="dept_id")
+    private Dept dept;// 部门
+
+    @JsonIgnore
+    private Byte status = StatusEnum.OK.getCode();// 状态
 
     @JsonIgnore
     private Byte isRole = UserIsRoleEnum.YES.getCode();// 是否拥有角色

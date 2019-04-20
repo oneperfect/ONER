@@ -30,7 +30,7 @@ public class UserController {
 
     @GetMapping("/picture")
     public void picture(String p, HttpServletResponse response) throws IOException {
-        String defaultPath = "/assets/images/user-picture.jpg";
+        String defaultPath = "/assets/images/user-picture01.jpg";
         if(!StringUtils.isEmpty(p) || defaultPath.equals(p)) {
             ProjectProperties properties = SpringContextUtil.getBean(ProjectProperties.class);
             String uploadPath = properties.getFileUploadPath();

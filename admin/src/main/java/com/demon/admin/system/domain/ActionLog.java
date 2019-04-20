@@ -26,19 +26,12 @@ public class ActionLog implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;// 日志id
-
     private String name;// 日志名称
-
     private Byte type;// 日志类型
-
-    private String ipaddr;// 日志操作ip地址
-
+    private String ipAddr;// 日志操作ip地址
     private String clazz;// 产生日志的类
-
     private String method;// 产生日志的方法
-
     private String model;// 产生日志的表
-
     private Long recordId;// 产生日志的用户
 
     @Lob

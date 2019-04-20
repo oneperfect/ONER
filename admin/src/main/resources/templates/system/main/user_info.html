@@ -7,18 +7,18 @@
     <div class="user-info">
         <div class="user-avatar-box">
             <img class="user-avatar" th:src="@{'/user/picture?p='+${user.picture}}" alt="头像">
-            <span class="edit-avatar" th:attr="data-url=@{/user_picture}">修改头像</span>
+            <span class="edit-avatar" th:attr="data-url=@{/main/update_user_picture}">修改头像</span>
         </div>
         <ul class="detail-info">
             <li>账号：<span th:text="${user.username}" th:title="${user.username}"></span></li>
             <li>昵称：<span th:text="${user.nickname}" th:title="${user.nickname}"></span></li>
-            <li>性别：<span th:text="${#dicts.keyValue('USER_SEX', user.sex)}"
-                         th:title="${#dicts.keyValue('USER_SEX', user.sex)}"></span></li>
+<!--            <li>性别：<span th:text="${#dict_util.keyValue('USER_SEX', user.sex)}"-->
+<!--                         th:title="${#dict_util.keyValue('USER_SEX', user.sex)}"></span></li>-->
             <li>电话：<span th:text="${user.phone}" th:title="${user.phone}"></span></li>
             <li>邮箱：<span th:text="${user.email}" th:title="${user.email}"></span></li>
         </ul>
     </div>
-    <form class="user-edit" th:action="@{/user_info}">
+    <form class="user-edit" th:action="@{/main/update_user_info}">
         <input type="hidden" name="username" th:value="${user.username}"/>
         <input type="hidden" name="dept" th:value="${user.dept?.id}"/>
         <div class="layui-form-item">
@@ -42,8 +42,14 @@
         <div class="layui-form-item">
             <label class="layui-form-label">选择性别</label>
             <div class="layui-input-inline">
-                <input type="radio" name="sex" value="1" title="男" checked><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>男</div></div>
-                <input type="radio" name="sex" value="2" title="女" th:checked="${user.sex} eq 2"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>女</div></div>
+                <input type="radio" name="sex" value="1" title="男" checked>
+                <div class="layui-unselect layui-form-radio layui-form-radioed">
+                    <i class="layui-anim layui-icon"></i><div>男</div>\
+                </div>
+                <input type="radio" name="sex" value="2" title="女" th:checked="${user.sex} eq 2">
+                <div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon">
+                    </i><div>女</div>
+                </div>
             </div>
         </div>
         <div class="layui-form-item layui-form-text">
@@ -69,8 +75,8 @@
     </div>
 </div>
 <script th:replace="/common/template :: script"></script>
-<script type="text/javascript" th:src="@{/js/plugins/jquery-3.3.1.min.js}"></script>
-<script type="text/javascript" th:src="@{/js/plugins/jquery.mousewheel.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/js/plugins/jquery-3.3.1.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/js/plugins/jquery.mousewheel.min.js}"></script>
 <script>
     layui.use(['jquery','upload'], function () {
         var $ = layui.jquery;

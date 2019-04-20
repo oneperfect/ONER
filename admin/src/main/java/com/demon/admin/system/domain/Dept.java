@@ -1,5 +1,7 @@
 package com.demon.admin.system.domain;
 
+import com.demon.admin.core.enums.StatusEnum;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
@@ -25,15 +27,10 @@ public class Dept implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)// 部门编号
     private Long id;
-
     private String title;// 部门名称
-
     private Long pid;// 父级编号
-
     private String pids;// 所有父级编号
-
     private Long sort;// 排序
-
     private String remark;// 备注
 
     @CreatedDate
@@ -41,6 +38,9 @@ public class Dept implements Serializable {
 
     @LastModifiedDate
     private Date updateDate;// 更新时间
+
+    @JsonIgnore
+    private Byte status = StatusEnum.OK.getCode();// 状态
 
 
 }

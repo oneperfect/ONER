@@ -41,7 +41,7 @@ public class AuthorRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         UsernamePasswordToken token = (UsernamePasswordToken)authenticationToken;
         // 获取数据库中的用户数据
-        User user = userService.findUserByUsername(token.getUsername());
+        User user = userService.findByUsername(token.getUsername());
         // 判断是否存在该用户
         if(user == null) {
             throw new UnknownAccountException();

@@ -1,6 +1,6 @@
 package com.demon.admin.system.service.impl;
 
-import com.demon.admin.core.enums.UserStatusEnum;
+import com.demon.admin.core.enums.StatusEnum;
 import com.demon.admin.system.domain.Menu;
 import com.demon.admin.system.repository.MenuRepository;
 import com.demon.admin.system.service.MenuService;
@@ -30,6 +30,6 @@ public class MenuServiceImpl implements MenuService {
      * @param sort 排序对象
      */
     public List<Menu> getList(Sort sort) {
-        return menuRepository.findAllByStatus(sort, UserStatusEnum.OK.getCode());
+        return menuRepository.findAllByStatus(sort, StatusEnum.OK.getCode());
     }
 }

@@ -50,7 +50,7 @@ public class ShiroConfig {
         filterMap.put("/assets/**", "anon");
         filterMap.put("/lib/**", "anon");
         filterMap.put("/favicon.ico", "anon");
-//        filterMap.put("/**", "userAuthor");
+        filterMap.put("/**", "userAuthor");
 
         // 设置过滤规则
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);

@@ -1,6 +1,6 @@
 package com.demon.admin.system.domain;
 
-import com.demon.admin.core.enums.UserStatusEnum;
+import com.demon.admin.core.enums.StatusEnum;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
@@ -52,7 +52,7 @@ public class Role implements Serializable {
     @JoinColumn(name="update_by")
     private User updateBy;// 更新用户
 
-    private Byte status = UserStatusEnum.OK.getCode();// 用户状态
+    private Byte status = StatusEnum.OK.getCode();// 用户状态
 
     @JsonIgnore
     @ManyToMany(mappedBy = "roles")

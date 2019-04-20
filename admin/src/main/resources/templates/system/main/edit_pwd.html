@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="/common/template :: header(~{::title},~{::link},~{::style})">
 </head>
 <body>
 <div class="layui-form oner-compile">
-    <form th:action="@{/edit_pwd}">
+    <form th:action="@{/main/update_pwd}">
         <div class="layui-form-item">
             <label class="layui-form-label">原来密码</label>
             <div class="layui-input-inline">

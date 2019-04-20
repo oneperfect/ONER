@@ -7,7 +7,7 @@ import lombok.Getter;
  * @Date: 2019/4/3
  */
 @Getter
-public enum UserStatusEnum {
+public enum StatusEnum {
 
     OK((byte)1, "启用"),
     FREEZED((byte)2, "冻结"),
@@ -16,7 +16,7 @@ public enum UserStatusEnum {
     private Byte code;
     private String message;
 
-    UserStatusEnum(Byte code, String message) {
+    StatusEnum(Byte code, String message) {
         this.code = code;
         this.message = message;
     }}
