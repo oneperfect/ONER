@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="admin" />
         <module name="boot" />
         <module name="core" />
         <module name="devtools" />
+        <module name="admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="admin" target="1.8" />
+      <module name="admin" target="9" />
       <module name="boot" target="1.8" />
       <module name="core" target="1.8" />
       <module name="devtools" target="1.8" />

@@ -37,8 +37,8 @@
                          class="com.demon.admin.core.thymeleaf.attribute.SelectListAttrProcessor">
         <documentation><![CDATA[
 		自定义下拉列表生成标签，值可以为数组和集合！
-		mo-selected属性：默认选择的值
-		mo-empty属性：添加无值下拉选项，值为显示内容
+		one-selected属性：默认选择的值
+		one-empty属性：添加无值下拉选项，值为显示内容
 		]]></documentation>
     </attribute-processor>
 
@@ -46,8 +46,8 @@
                          class="com.demon.admin.core.thymeleaf.attribute.SelectDictKeyAttrProcessor">
         <documentation><![CDATA[
 		根据字典键值对生成下拉列表，值可以为数组和集合！
-		mo-selected属性：默认选择的值
-		mo-empty属性：添加无值下拉选项，值为显示内容
+		one-selected属性：默认选择的值
+		one-empty属性：添加无值下拉选项，值为显示内容
 		]]></documentation>
     </attribute-processor>
 
@@ -55,8 +55,8 @@
                          class="com.demon.admin.core.thymeleaf.attribute.SelectDictEnumAttrProcessor">
         <documentation><![CDATA[
 		根据字典枚举生成下拉列表，值可以为数组和集合！
-		mo-selected属性：默认选择的值
-		mo-empty属性：添加无值下拉选项，值为显示内容
+		one-selected属性：默认选择的值
+		one-empty属性：添加无值下拉选项，值为显示内容
 		]]></documentation>
     </attribute-processor>
 

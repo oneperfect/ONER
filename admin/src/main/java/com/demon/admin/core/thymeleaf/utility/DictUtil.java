@@ -23,6 +23,7 @@ public class DictUtil {
      * @param label 字典标识
      */
     public static Map<String, String> value(String label) {
+        System.out.println("\tvalue(): " + label);
         Map<String, String> value = null;
         Element dictEle = dictCache.get(label);
         if(dictEle != null) {
@@ -52,12 +53,23 @@ public class DictUtil {
      * @param code 选项编码
      */
     public static String keyValue(String label, String code){
+        System.out.println("\tkeyValue().label: " + label);
+        System.out.println("\tkeyValue().code: " + code);
         Map<String, String> list = DictUtil.value(label);
         if(list != null){
             return list.get(code);
         }else{
             return "";
         }
+    }
+
+    /**
+     * 封装数据状态字典
+     * @param status 状态
+     */
+    public static String dataStatus(Byte status){
+        String label = "DATA_STATUS";
+        return DictUtil.keyValue(label, String.valueOf(status));
     }
 
     /**

@@ -1,0 +1,65 @@
+{
+  "groups": [
+    {
+      "name": "project",
+      "type": "com.demon.core.config.ProjectProperties",
+      "sourceType": "com.demon.core.config.ProjectProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "project.captcha-open",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.demon.core.config.ProjectProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "project.excludes",
+      "type": "java.lang.String",
+      "sourceType": "com.demon.core.config.ProjectProperties",
+      "defaultValue": "\/error,\/login\/,\/login\/enter,\/assets\/**,\/layui\/**"
+    },
+    {
+      "name": "project.file-upload-path",
+      "type": "java.lang.String",
+      "sourceType": "com.demon.core.config.ProjectProperties"
+    },
+    {
+      "name": "project.global-session-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.demon.core.config.ProjectProperties",
+      "defaultValue": 1800
+    },
+    {
+      "name": "project.remember-me-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.demon.core.config.ProjectProperties",
+      "defaultValue": 7
+    },
+    {
+      "name": "project.session-validation-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "com.demon.core.config.ProjectProperties",
+      "defaultValue": 900
+    },
+    {
+      "name": "project.static-path-pattern",
+      "type": "java.lang.String",
+      "sourceType": "com.demon.core.config.ProjectProperties",
+      "defaultValue": "\/upload\/**"
+    },
+    {
+      "name": "project.url-patterns",
+      "type": "java.lang.String",
+      "sourceType": "com.demon.core.config.ProjectProperties",
+      "defaultValue": "\/**"
+    },
+    {
+      "name": "project.xss-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.demon.core.config.ProjectProperties",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}

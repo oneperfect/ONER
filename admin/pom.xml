@@ -6,6 +6,18 @@
     <artifactId>admin</artifactId>
     <packaging>jar</packaging>
     <name>后台管理模块</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>9</source>
+                    <target>9</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <parent>
         <groupId>com.demon</groupId>

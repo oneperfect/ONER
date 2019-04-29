@@ -70,7 +70,7 @@ public class LoginController {
 //                return ResultVoUtil.error("您不是后台管理员！");
 //            }
 
-            return ResultVoUtil.success("登录成功", new URL("/main/"));
+            return ResultVoUtil.success("登录成功", new URL("/"));
 
         }catch(Exception e) {
             return ResultVoUtil.error("用户名或密码错误！");

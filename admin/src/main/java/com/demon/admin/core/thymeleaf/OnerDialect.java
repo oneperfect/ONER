@@ -21,26 +21,26 @@ public class OnerDialect extends AbstractProcessorDialect implements IExpression
 
     private static final String NAME = "OnerDialect";
     private static final String PREFIX = "one";
-    private IExpressionObjectFactory iExpressionObjectFactory = null;
+    private IExpressionObjectFactory expressionObjectFactory = null;
 
-    protected OnerDialect() {
+    public OnerDialect() {
         super(NAME, PREFIX, StandardDialect.PROCESSOR_PRECEDENCE);
     }
 
     @Override
     public IExpressionObjectFactory getExpressionObjectFactory() {
-        if(iExpressionObjectFactory == null){
-            this.iExpressionObjectFactory = new OnerExpressionObjectFactory();
+        if(this.expressionObjectFactory == null){
+            this.expressionObjectFactory = new OnerExpressionObjectFactory();
         }
-        return this.iExpressionObjectFactory;
+        return this.expressionObjectFactory;
     }
 
     @Override
     public Set<IProcessor> getProcessors(String dialectPrefix) {
-        Set<IProcessor> processors = new LinkedHashSet<>();
+        LinkedHashSet<IProcessor> processors = new LinkedHashSet<>();
         processors.add(new UserAttrProcessor(dialectPrefix));
         processors.add(new SelectDictAttrProcessor(TemplateMode.HTML, dialectPrefix));
         processors.add(new SelectListAttrProcessor(TemplateMode.HTML, dialectPrefix));
-        return null;
+        return processors;
     }
 }

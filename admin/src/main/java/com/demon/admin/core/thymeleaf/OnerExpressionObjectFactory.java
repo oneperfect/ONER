@@ -23,14 +23,18 @@ public class OnerExpressionObjectFactory implements IExpressionObjectFactory {
 
     @Override
     public Set<String> getAllExpressionObjectNames() {
-        Set<String> names = Collections.unmodifiableSet(new LinkedHashSet<>(Arrays.asList(
-                PAGE_UTIL_NAME, DICT_UTIL_NAME, LOG_UTIL_NAME
+        System.out.println("getAllObjectName()");
+        Set<String> names = Collections.unmodifiableSet(new LinkedHashSet<String>(Arrays.asList(
+                PAGE_UTIL_NAME,
+                DICT_UTIL_NAME,
+                LOG_UTIL_NAME
         )));
         return names;
     }
 
     @Override
     public Object buildObject(IExpressionContext iExpressionContext, String expressionObjectName) {
+        System.out.println("objectName: " + expressionObjectName);
         if(PAGE_UTIL_NAME.equals(expressionObjectName)) {
             return PAGE_UTIL_OBJECT;
         }
@@ -40,12 +44,12 @@ public class OnerExpressionObjectFactory implements IExpressionObjectFactory {
         if(LOG_UTIL_NAME.equals(expressionObjectName)) {
             return LOG_UTIL_OBJECT;
         }
-
         return null;
     }
 
     @Override
     public boolean isCacheable(String expressionObjectName) {
+        System.out.println("expressionObjectName: " + expressionObjectName);
         return expressionObjectName != null;
     }
 }

@@ -1,6 +1,9 @@
 package com.demon.admin.system.service;
 
 import com.demon.admin.system.domain.User;
+import org.springframework.data.domain.Page;
+
+import java.util.List;
 
 /**
  * @Auther: oneperfect
@@ -26,6 +29,15 @@ public interface UserService {
      * @param user 用户数据
      */
     User save(User user);
+
+
+    /**
+     * 分页查询用户数据
+     * @param user 实体对象
+     * @param depts 部门编号列表
+     * @return 返回页面数据
+     */
+    Page<User> findPageList(User user, List<Long> depts);
 
 
 }

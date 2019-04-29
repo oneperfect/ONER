@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class SpringContextUtil implements ApplicationContextAware {
 
-    @Autowired
     private static ApplicationContext applicationContext;
 
     @Override
@@ -50,5 +49,12 @@ public class SpringContextUtil implements ApplicationContextAware {
         return getApplicationContext().getBean(name, clazz);
     }
 
+    /**
+     * 获取配置文件配置项的值
+     * @param key 配置项key
+     */
+    public static String getEnvironmentProperty(String key){
+        return getApplicationContext().getEnvironment().getProperty(key);
+    }
 
 }
