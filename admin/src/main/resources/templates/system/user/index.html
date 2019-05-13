@@ -90,11 +90,13 @@
                     <td th:text="${item.username}">用户名</td>
                     <td th:text="${item.nickname}">用户昵称</td>
                     <td th:text="${item.dept?.title}">用户昵称</td>
-                    <td th:text="${#dict_util.keyValue('USER_SEX', item.sex)}">性别</td>
+                    <td>性别</td>
+<!--                    <td th:text="${#dict_util.keyValue('USER_SEX', item.sex)}">性别</td> -->
                     <td th:text="${item.phone}">电话</td>
                     <td th:text="${item.email}">邮箱</td>
                     <td th:text="${#dates.format(item.createDate, 'yyyy-MM-dd HH:mm:ss')}">创建时间</td>
-                    <td th:text="${#dict_util.dataStatus(item.status)}">状态</td>
+                    <td>状态</td>
+<!--                    <td th:text="${#dict_util.dataStatus(item.status)}">状态</td> -->
                     <td>
                         <a class="open-popup" data-title="编辑用户" th:attr="data-url=@{'/user/edit/'+${item.id}}"  data-size="600,570" href="#">编辑</a>
                         <a class="open-popup" data-title="详细信息" th:attr="data-url=@{'/user/detail/'+${item.id}}"  data-size="800,600" href="#">详细</a>

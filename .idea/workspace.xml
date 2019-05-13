@@ -2,75 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f257893-5159-47e2-952f-dca743cb4ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerDialect.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerDialect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerExpressionObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerExpressionObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/DictUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/DictUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/xml/ONER-Dialect.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/xml/Oner-Dialect.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/repository/DeptRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/repository/DeptRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/templates/system/user/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/templates/system/user/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/templates/system/user/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/templates/system/user/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/PageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/templates/common/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/templates/common/fragment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/resources/templates/system/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/templates/system/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/config/ShiroConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/constant/AdminConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/constant/AdminConst.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/enums/MenuTypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/enums/MenuTypeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/enums/ResultEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/enums/StatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/enums/StatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/enums/UserIsRoleEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/enums/UserIsRoleEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/exception/ResultException.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/exception/ResultException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/shiro/AuthorRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/shiro/AuthorRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/shiro/ShiroUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/shiro/ShiroUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/shiro/UserAuthorFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/shiro/UserAuthorFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/OnerDialect.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/OnerDialect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/OnerExpressionObjectFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/OnerExpressionObjectFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/attribute/SelectDictAttrProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/attribute/SelectDictAttrProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/attribute/SelectListAttrProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/attribute/SelectListAttrProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/attribute/UserAttrProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/attribute/UserAttrProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/utility/DictUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/utility/DictUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/utility/LogUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/utility/LogUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/utility/PageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/thymeleaf/utility/PageUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/utils/EhCacheUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/core/utils/EhCacheUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/ActionLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/ActionLogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/DeptController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/ActionLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/ActionLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/Dept.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/Dict.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/Dict.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/BaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/BaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/DeptRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/DeptRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/DictRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/DictRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/MenuRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/MenuRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/DeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/DeptService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/DictService.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/DictService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/MenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/MenuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/impl/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/impl/DeptServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/impl/DictServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/impl/DictServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/impl/MenuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/validator/UserForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/com/demon/admin/system/validator/UserForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/classes/templates/common/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/templates/common/fragment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/classes/templates/system/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/templates/system/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/test-classes/com/demon/admin/AdminApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/test-classes/com/demon/admin/AdminApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/demon/core/utils/HttpServletUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/demon/core/utils/HttpServletUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/demon/core/utils/SpringContextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/demon/core/utils/SpringContextUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,43 +40,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerDialect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="76" lean-forward="true" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerExpressionObjectFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/system/user/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="92" column="40" lean-forward="true" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+            <state relative-caret-position="19">
+              <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/common/fragment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/PageUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="703">
               <caret line="59" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
+            <state relative-caret-position="684">
               <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -162,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
+            <state relative-caret-position="741">
               <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
             </state>
           </provider>
@@ -171,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/DictUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+            <state relative-caret-position="988">
+              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/demon/core/utils/SpringContextUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+            <state relative-caret-position="551">
+              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -192,7 +127,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/xml/Oner-Dialect.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="950">
               <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
             </state>
           </provider>
@@ -224,12 +159,14 @@
       <find>#dicts</find>
       <find>one</find>
       <find>timo</find>
+      <find>#pageUtil</find>
     </findStrings>
     <replaceStrings>
       <replace>demon</replace>
       <replace>one</replace>
       <replace>#dict_util</replace>
       <replace>oner</replace>
+      <replace>#page_util</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -244,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/system/menu/index.html" />
         <option value="$PROJECT_DIR$/admin/src/main/resources/static/assets/js/main.js" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/repository/MenuRepository.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/impl/MenuServiceImpl.java" />
@@ -257,7 +193,6 @@
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/utils/EhCacheUtil.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/domain/ActionLog.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/xml/ONER-Dialect.xml" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/PageUtil.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/LogUtil.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/attribute/UserAttrProcessor.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/attribute/SelectListAttrProcessor.java" />
@@ -291,10 +226,12 @@
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/UserController.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerDialect.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/xml/Oner-Dialect.xml" />
-        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/system/user/index.html" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/DictUtil.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerExpressionObjectFactory.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/demon/core/utils/SpringContextUtil.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/system/user/index.html" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/PageUtil.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/common/fragment.html" />
       </list>
     </option>
   </component>
@@ -322,111 +259,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="demon" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="demon" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="demon" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="core" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="demon" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="core" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="thymeleaf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="demon" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="core" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="thymeleaf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="utility" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="oner" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="demon" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="core" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="thymeleaf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="xml" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
     </panes>
@@ -502,7 +335,7 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.10741886" />
+    <option name="contentProportion" value="0.1568779" />
   </component>
   <component name="RunManager">
     <configuration name="BootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -721,6 +554,10 @@
       <workItem from="1556287587976" duration="7097000" />
       <workItem from="1556367005710" duration="622000" />
       <workItem from="1556458968740" duration="6501000" />
+      <workItem from="1556555517583" duration="521000" />
+      <workItem from="1556879528168" duration="2029000" />
+      <workItem from="1556977435675" duration="2576000" />
+      <workItem from="1557722795525" duration="249000" />
     </task>
     <task id="LOCAL-00001" summary="无任何改动">
       <created>1550645570346</created>
@@ -904,16 +741,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555774495855</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="添加修改密码功能">
+      <created>1556555893505</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1556555893505</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="415539000" />
+    <option name="totallyTimeSpent" value="420914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49779737" visible="true" weight="0.22844176" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49779737" visible="true" weight="0.28744328" />
       <window_info id="Structure" order="1" sideWeight="0.50220263" side_tool="true" weight="0.23827533" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -931,10 +776,10 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49924356" weight="0.32903227" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50378215" side_tool="true" weight="0.47096774" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5045386" side_tool="true" weight="0.5096774" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4977307" weight="0.19193548" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.49621785" visible="true" weight="0.3016129" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.49546143" visible="true" weight="0.27580646" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32903227" />
       <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49394855" weight="0.29032257" />
       <window_info anchor="bottom" id="Problems" order="16" weight="0.32903227" />
@@ -1061,13 +906,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="添加修改密码功能" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/exception/ResultException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/error.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1219,22 +1057,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/PageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/jdk-11.0.3/lib/src.zip!/java.base/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="242" column="6" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/common/fragment.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/common/template.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1335,51 +1163,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/maven-jar/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar!/org/thymeleaf/expression/IExpressionObjectFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/xml/Oner-Dialect.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/system/user/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="92" column="40" lean-forward="true" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/DictUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1390,30 +1177,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerDialect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="76" lean-forward="true" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/maven-jar/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar!/org/thymeleaf/context/IExpressionContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerExpressionObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1424,20 +1191,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/demon/core/utils/SpringContextUtil.java">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerDialect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        <state relative-caret-position="152">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/OnerExpressionObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/maven-jar/org/springframework/data/spring-data-commons/2.1.5.RELEASE/spring-data-commons-2.1.5.RELEASE.jar!/org/springframework/data/domain/Page.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="703">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/system/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/DictUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/demon/core/utils/SpringContextUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/xml/Oner-Dialect.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/demon/admin/core/thymeleaf/utility/PageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/common/fragment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/system/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
         </state>
       </provider>
     </entry>
